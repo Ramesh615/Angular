@@ -1,0 +1,44 @@
+<style>
+div{
+  background-image: url('assets/images/one.jpg') ;
+ background-size:cover;
+width:100%;
+padding-top:0%;
+padding-left:100px;
+margin:0 auto; 
+
+    
+}
+
+
+
+</style>
+<nav class="navbar navbar-expand-sm bg-primary  navbar-dark purple lighten">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li >
+        <a class="navbar-nav" href="#" routerLink="employees" class="nav-link" routerLinkActive="active" style="color:white; font-family:MeriendaOne-Regular; font-size:20px">Course List</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="add" class="nav-link" routerLinkActive="active" style="color:white; font-family:MeriendaOne-Regular; font-size:20px">Enroll Course </a>
+    </li>
+  <li class="nav-item" ><a  class="nav-link" routerLinkActive="active" style="color:#43FF33; font-family:MeriendaOne-Regular; font-size:20px">Contact</a></li>
+  <li class="nav-item" ><a  class="nav-link" routerLinkActive="active" style="color:#FFBE33; font-family:MeriendaOne-Regular; font-size:20px">About</a></li>
+
+
+  </ul>
+</nav>
+
+  
+ <div  class="card">
+ <div  class="card-body">
+ <h2 style="text-align: center;">{{myimage}}</h2>
+  <router-outlet></router-outlet>
+    </div>
+  </div>
+
+<footer class="footer">
+ 
+      <span style="color:white; font-family:OleoScript-Regular">All Rights Reserved 2022 @Aira.Inc</span>
+ 
+</footer>

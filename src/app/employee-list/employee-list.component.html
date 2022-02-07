@@ -1,0 +1,45 @@
+<style>
+div{
+  background-image: url('assets/images/tree.jpg') ;
+ background-size:cover;
+width:100%;
+padding-top:0%;
+padding-left:100px;
+margin:0 auto; 
+
+    
+}
+</style>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+<h2 style="color:#FF7433; font-family:MeriendaOne-Regular; font-size:30px">Course Details List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th style="color:red; font-family:OleoScript-Regular" >Name </th>
+          <th style="color:green; font-family:OleoScript-Regular">Email</th>
+          <th style="color:blue; font-family:OleoScript-Regular">Mobile</th>
+          <th style="color:#FF7433; font-family:OleoScript-Regular">Technology</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees | async">
+          <td style="color:red; font-family:OleoScript-Regular">{{employee.firstName}}</td>
+          <td style="color:green; font-family:OleoScript-Regular">{{employee.lastName}}</td>
+          <td style="color:blue; font-family:OleoScript-Regular">{{employee.emailId}}</td>
+          <td style="color:#FF7433; font-family:OleoScript-Regular">{{employee.fee}}</td>
+    
+          <td><button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+              <button (click)="updateEmployee(employee.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
