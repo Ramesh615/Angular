@@ -2,23 +2,30 @@
 
 <hr/>
 <div *ngIf="employee">
-  <div  style="color:red; font-family:OleoScript-Regular; font-size:30px">
+ <br>
+ <div  style="color:red; font-family:OleoScript-Regular; font-size:30px">
     <label><b>Name: </b> {{employee.firstName}} </label>
   </div>
+<br>
   <div style="color:green; font-family:OleoScript-Regular; font-size:30px">
     <label ><b>Email: </b></label> {{employee.lastName}}
   </div>
+<br>
   <div style="color:blue; font-family:OleoScript-Regular; font-size:30px">
     <label ><b>Mobile: </b></label>  {{employee.emailId}}
 
- </div>  
+ </div> 
+<br>
 <div style="color:black; font-family:OleoScript-Regular; font-size:30px">
     <label><b style="color:red;">Technology: </b></label> {{employee.fee}}
   </div>
 </div>
 
+
+
 <br>
 <br>
-<button (click)="list()" class="btn btn-primary"  style="color:white; font-family:OleoScript-Regular; font-size:30px">Back to Course List</button><br>
+<br>
+<button (click)="list()" class="btn btn-primary"  style="color:white;  font-family:OleoScript-Regular; font-size:30px">Back to Course List</button><br>
 
 

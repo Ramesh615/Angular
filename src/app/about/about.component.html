@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+    
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 5vh;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.column2 {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  
+  text-align: center;
+  background-color: #474e5d;
+  height:100%;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.blackText{
+color:red;
+}
+.hrline {
+  border: 10px solid blue;
+ opacity:50%;
+  border-radius: 5px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+
+  width: 100%;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+
+  width: 100%;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+
+  width: 100%;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+
+  width: 100%;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  width: 100%;
+  color: white;
+ height:50%;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.body {margin:0;}
+
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+.hr {
+ margin-top: 1px; 
+margin-bottom: 1px }
+
+
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+  height: 1500px; /* Used in this example to enable scrolling */
+}
+</style>
+</head>
+<body>
+
+<div class="about-section" >
+  <h1 style="color:white; font-family:MeriendaOne-Regular; font-size:20px">About Us </h1>
+  <p style="color:#43FF33; font-family:MeriendaOne-Regular; font-size:20px">Aira Innovations.</p>
+  <p style="color:#E5990C; font-family:MeriendaOne-Regular; font-size:50px">The Future Is Here</p>
+</div>
+<div>
+<h2 style="text-align:center; color:blue; font-family:MeriendaOne-Regular; font-size:20px">Our Team & Technologies</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <!img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2 style="color:red; text-align:center; font-family:MeriendaOne-Regular; font-size:20px">Ramesh</h2>
+        <p class="title" style="color:black; text-align:center; font-family:MeriendaOne-Regular;">CEO & Founder</p>
+<hr class="hrline">
+
+        <p style="color:black; font-family:MeriendaOne-Regular;"> <span class="blackText" >Mr. Ramesh (Aira)</span> also aliased as <span class="blackText" > 'Aira ' </span> by many students, is one of the leading Java trainer and has played a key role in building successful careers of over many students in Java. His high passion towards teaching and deep reach-ability to any student helps to establish a great bond with students, resulting in simplifying the process of getting Job.</p>
+<p style="color:black; font-family:MeriendaOne-Regular;">With over 4 years of experience in IT training on multiple Java skills like <span class="blackText" > Advance Java, Python, SpringBoot, Hibernate, Angular, Real-Time Tools, etc </span> (ranging right from ground level to the high extreme concepts)... and his IT work experience helps for providing best for the students. This not only helps student from perspective of getting a good Job but also in sustaining Jobs in highly competitive environment. </p>
+        <p style="color:#E11DCF; text-align:center; font-family:MeriendaOne-Regular;">airainnovations@gmail.com</p>
+        <p style="color:white; text-align:center; font-family:MeriendaOne-Regular;"><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <!img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2 style="color:red; text-align:center; font-family:MeriendaOne-Regular; font-size:20px">We Support</h2>
+
+        <p class="title" style="color:black; text-align:center; font-family:MeriendaOne-Regular;">All CuttingEdge Technologies</p>
+
+<hr class="hrline">
+        <div class="column1" >
+<h3 style="color:#43FF33; font-family:MeriendaOne-Regular; font-size:20px">Languages</h3>
+ <ul style="color:#DF0EE5; font-family:MeriendaOne-Regular;" >
+ <li style="color:#DF0EE5;"><u>JAVA</u></li>
+
+<li style="color:green; font-family:MeriendaOne-Regular;"  >Core Java</li>
+<li  style="color:green; font-family:MeriendaOne-Regular;" >Spring</li>
+<li style="color:green; font-family:MeriendaOne-Regular;" >SpringBoot</li>
+<li  style="color:green; font-family:MeriendaOne-Regular;" >Maven</li>
+<li style="color:green; font-family:MeriendaOne-Regular;" >Hibernet</li>
+<li style="color:green; font-family:MeriendaOne-Regular;" >microservices</li>
+<li style="color:green; font-family:MeriendaOne-Regular;" >git</li>
+<li>python</li>
+<li>Angular</li>
+<li>html</li>
+<li>css</li>
+<li>Groovy</li>
+<li>Node.js</li>
+<li>C & C++ </li>
+<li>React</li>
+</ul>
+</div>
+
+<div class="column1">
+<h3 style="color:#43FF33; font-family:MeriendaOne-Regular; font-size:20px">Cloud</h3>
+<ul style="color:#DF0EE5; font-family:MeriendaOne-Regular;" >
+  <li><u>AWS</u></li>
+ 
+ <li style="color:green; font-family:MeriendaOne-Regular;" >Ec2</li>
+<li style="color:green; font-family:MeriendaOne-Regular;" >S3</li>
+
+  <li>Azure</li>
+  <li>GCF</li>
+  <li style="color:#DF0EE5;" ><u>Devops</u></li>
+ <li style="color:green; font-family:MeriendaOne-Regular;" >jenkins</li>
+ 
+  <li style="color:green; font-family:MeriendaOne-Regular;" >docker</li>
+  <li style="color:green; font-family:MeriendaOne-Regular;" >ansible</li>
+  <li style="color:green; font-family:MeriendaOne-Regular;">kubernetes</li>
+<li style="color:green; font-family:MeriendaOne-Regular;" >sonarcube</li>
+  <li style="color:green; font-family:MeriendaOne-Regular;" >Nexus</li>
+  <li style="color:green; font-family:MeriendaOne-Regular;" >slack</li>
+
+<li>Heroku</li>
+<li>PCF</li>
+</ul>
+</div>
+        <p style="color:white; text-align:center; font-family:MeriendaOne-Regular;"><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+ <div class="column"> 
+  
+ <div class="card"> 
+<h2 style="color:red; text-align:center; font-family:MeriendaOne-Regular; font-size:20px">Connect With Us On</h2>
+<p class="title" style="color:black; text-align:center; font-family:MeriendaOne-Regular;">Social Media Networks</p>
+    
+<hr class="hrline">
+      <!img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+<div class="column2" style="color:#E11DCF; font-family:MeriendaOne-Regular; font-size:20px">   
+<a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a> 
+<p href="https://twitter.com/login?lang=en" style="font-size:15px;">twitter.airainnovations.in</p>
+<a href="https://www.facebook.com/login/" class="fa fa-facebook"></a>
+<p href="https://www.facebook.com/login/"  style="font-size:15px;">facebook.airainnovations.in</p>
+<a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+<p style="font-size:15px;">youtube.airainnovations.in</p>
+<a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram" ></a>
+<p style="font-size:15px;" >instagram.airainnovations.in</p>
+</div>
+<p style="color:white; text-align:center; font-family:MeriendaOne-Regular;"><button class="button">Contact</button></p>
+    </div>
+  </div>
+       
+</div>
+</div>
+</body>
+</html>
